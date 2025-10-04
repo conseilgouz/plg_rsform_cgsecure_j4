@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="rsform" method="upgrade">
+	<name>CG_RSFORM</name>
+	<author>ConseilGouz</author>
+	<creationDate>2025-10-04</creationDate>
+	<copyright>(C)2025 ConseilGouz. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
+	<authorUrl>www.conseilgouz.com</authorUrl>
+	<version>2.1.0</version>
+	<description>CG_RSFORM_XML_DESCRIPTION</description>
+	<namespace path="src">ConseilGouz\Plugin\Rsform\Cgsecure</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<folder plugin="cgsecure">services</folder>
+		<folder>src</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="fr-FR">language/fr-FR/plg_rsform_cgsecure.ini</language>
+		<language tag="fr-FR">language/fr-FR/plg_rsform_cgsecure.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_rsform_cgsecure.ini</language>
+		<language tag="en-GB">language/en-GB/plg_rsform_cgsecure.sys.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic" addfieldprefix="ConseilGouz\Library\Field">
+				<field name="version" type="version"  margintop="-3em"  extension="plugin/rsform/cgsecure" />
+				<field name="note" type="note"  label="CGSECURE_NOTE" description="CGSECURE_NOTE_DESC" />
+			</fieldset>
+		</fields>
+	</config>	
+    <updateservers>
+       <server type="extension" priority="1" name="CG_RSFORM">https://raw.githubusercontent.com/conseilgouz/updates_github/master/plg_rsform_cgsecure_update.xml</server>
+    </updateservers>
+	
+</extension>
