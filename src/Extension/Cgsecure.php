@@ -12,7 +12,7 @@ namespace ConseilGouz\Plugin\Rsform\Cgsecure\Extension;
 defined('_JEXEC') or die();
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\Event\SubscriberInterface;
-use ConseilGouz\CGSecure\Helper\Cgipcheck;
+use ConseilGouz\CGSecure\Cgipcheck;
 
 class Cgsecure extends CMSPlugin implements SubscriberInterface
 {
